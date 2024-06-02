@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="scroll.js"></script>
+</head>
+
+<body>
+    <section id="me"></section>
+
+    <div class="header">
+        <h1>
+            <span class="black">Martin Nayeri</span> is a product designer that blends a deep knowledge of UX and a passion for games to create interactive experiences that people love.
+            His work has been written about in <a href="https://www.wired.com/story/rewilding-climate-change-gig-work/" target="_blank">Wired</a>, launched alongside a <a href="https://www.wired.com/story/rewilding-climate-change-gig-work/" target="_blank">Coach</a> campaign, sponsored by <a href="https://www.wired.com/story/rewilding-climate-change-gig-work/" target="_blank">Adobe</a>, and even had a home at his <a href="https://www.wired.com/story/rewilding-climate-change-gig-work/" target="_blank">favorite bar</a> in Brooklyn.
+            <br><br><u style="color:red;">scroll to see some of his best work<u style="letter-spacing:0;">↓</u></u> 
+        </h1>
+    </div>
+
+
+    <div class="index" id="index">
+        <div class="nav-tags">
+            <div class="tag-bubble">selected</div>
+            <div class="tag-bubble">product design</div>
+            <div class="tag-bubble">ui/ux</div>
+            <div class="tag-bubble">interaction design</div>
+            <div class="tag-bubble">interface design</div>
+            <div class="tag-bubble">game development</div>
+            <div class="tag-bubble">game design</div>
+            <div class="tag-bubble">sound design</div>
+            <!-- Add more tag bubbles as needed -->
+    </div>
+        <div class="grid-container">
+            <a href="#rewilding" class="grid-item" onclick="scrollToSection(event, 'rewilding')">
+              <img src="images/projects/rewilding/rewilding-square.png" alt="Image 1">
+            </a>
+            <a href="#CHRONO" class="grid-item" onclick="scrollToSection(event, 'CHRONO')">
+              <img src="images/projects/CHRONO/CHRONO-square.png" alt="Image 1">
+            </a>
+            <a href="#MULTIPUCK" class="grid-item" onclick="scrollToSection(event, 'MULTIPUCK')">
+              <img src="images/projects/multipuck/multipuck1.png" alt="Image 1">
+            </a>
+            <a href="#LinkedIn" class="grid-item" onclick="scrollToSection(event, 'LinkedIn')">
+              <img src="images/projects/LinkedIn/LinkedIn-square.png" alt="Image 1">
+            </a>
+            <a href="#KOI" class="grid-item" onclick="scrollToSection(event, 'KOI')">
+              <img src="images/projects/koi/koi.png" alt="Image 1">
+            </a>
+            <a href="#Snow City" class="grid-item" onclick="scrollToSection(event, 'Snow City')">
+              <img src="images/projects/SnowCity/SnowCity-.png" alt="Image 1">
+            </a>
+            <a href="#Coach IAPM" class="grid-item" onclick="scrollToSection(event, 'Coach IAPM')">
+              <img src="images/projects/CoachiAPM/CoachiAPM.png" alt="Image 1">
+            </a>
+            <a href="#FailHard." class="grid-item" onclick="scrollToSection(event, 'FailHard.')">
+              <img src="images/projects/Failhard/FailHard.png" alt="Image 1">
+            </a>
+            <a href="#Spotify" class="grid-item" onclick="scrollToSection(event, 'Spotify')">
+              <img src="images/projects/Spotify/spotify-square.png" alt="Image 1">
+            </a>
+            <a href="#LivePalette" class="grid-item" onclick="scrollToSection(event, 'LivePalette')">
+              <img src="images/projects/LivePalette/LivePalette.png" alt="Image 1">
+            </a>
+            <a href="#Coach Tmall" class="grid-item" onclick="scrollToSection(event, 'Coach Tmall')">
+              <img src="images/projects/Tmall/Tmall.png" alt="Image 1">
+            </a>
+            <a href="#IRIDESCENT" class="grid-item" onclick="scrollToSection(event, 'IRIDESCENT')">
+              <img src="images/projects/IRIDESCENT/IRIDESCENT.png" alt="Image 2">
+            </a>
+            <a href="#CompositeGlobal" class="grid-item" onclick="scrollToSection(event, 'CompositeGlobal')">
+              <img src="images/projects/CompositeGlobal/Composite.png" alt="Image 1">
+            </a>
+            <a href="#Context" class="grid-item" onclick="scrollToSection(event, 'Context')">
+                <img src="images/projects/Context/Context-square.png" alt="Image 1">
+            </a>
+        </div>          
+    </div>
+    <script>
+        function scrollToSection(event, sectionId) {
+          event.preventDefault();
+          const section = document.getElementById(sectionId);
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+    <div class="nav">
+        <!-- <a href="#index" class="backtoindex" onclick="scrollToIndex(event)">me</a> <br> -->
+        <a href="#index" class="backtoindex" onclick="scrollToIndex(event)">back to top ↑</a> <br>
+        <!-- <a href="#index" class="backtoindex" onclick="scrollToIndex(event)">contact</a> -->
+    </div>
+    <script>
+        function scrollToIndex(event) {
+            event.preventDefault();
+            const section = document.getElementById("index");
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+    <!-- <div id="proj-nav">
+        <div class="nav-item">
+          <h2>me</h2>
+        </div>
+        <div class="nav-item">
+          <h2>selected</h2>
+        </div>
+        <div class="nav-item">
+          <h2>games</h2>
+        </div>
+        <div class="nav-item">
+            <h2>ui/ux</h2>
+        </div>
+        <div class="nav-item">
+          <h2>other</h2>
+        </div>
+    </div>
+    <script src="navbar.js"></script> -->
+
+    <div id="project-list">
+        <!-- <div class="project">
+            <div id="details">
+                <h3>rewilding</h3>
+                <p>a meditative ecology game about regrowing a forest as a means of reckoning with climate change and its effects.</p>
+                <h5>read more -></h5>
+            </div>
+            <img src="images/projects/rewilding/rewilding.png">
+        </div> -->
+    </div>
+    <script src="content.js"></script>
+</body>
+</html>

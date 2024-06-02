@@ -1,0 +1,274 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: proximity;
+}
+
+
+body {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+}
+
+
+h1 {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.05em;
+    padding: 10px;
+}
+
+h3 {
+
+    font-size: 85px;
+    font-weight: 900;
+    letter-spacing: -0.035em;
+
+}
+
+a {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    scroll-snap-align: start;
+}
+
+.index {
+    scroll-snap-align: end;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Center the flex container horizontally */
+    flex-direction: column;
+    align-items: center; /* Center the flex container vertically */
+}
+
+.nav-tags {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.index .tag-bubble {
+    /* CSS properties for tag bubbles inside .index */
+    opacity: 0.5;
+    margin-right: 10px;
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+    transition: all 0.1s ease-in;
+} 
+
+.index .tag-bubble:hover {
+    transform: scale(1.05); /* Increase the scale on hover */
+    /* opacity: 1; */
+}
+
+.index .tag-bubble.selected {
+    opacity: 1;
+}
+  
+
+  
+.grid-container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 30px;
+}
+  
+.grid-item {
+    width: calc(100vw / 7 - 40px);
+    aspect-ratio:1/1;
+    overflow: hidden;
+    transition: all 0.1s ease-in;
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* Increase the scale on hover */
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fit the image within the square while preserving aspect ratio */
+  }
+
+  
+/* .grid-item img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 25%;
+object-fit: cover;
+} */
+  
+  
+  
+  
+
+.black {
+    font-weight: 900;
+    letter-spacing: -0.04em;
+}
+
+.nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.backtoindex {
+    font-weight: 700;
+}
+
+#me:hover .backtoindex {
+    display: none;
+}
+
+#proj-nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.nav-item {
+    opacity: .5;
+    line-height: 3px;
+    z-index: 1;
+}
+
+.nav-item:hover {
+    opacity: 1;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+.nav-item.active {
+    color: red;
+}
+
+#project-list {
+    height: 100%;
+    width: 100%;
+}
+
+.project {
+    /* scroll-snap-stop: always; */
+    scroll-snap-align: end;
+    scroll-behavior: smooth;
+    display: flex;
+    z-index: -1;
+    padding: 10px;
+    /* background-color: rgb(141, 141, 141); */
+    height: 100%;
+    /* width: 100%; */
+    display: flex;
+    /* align-items: center; */
+    position: relative;
+
+}
+
+
+#details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+    height: 100%;
+    padding-bottom: 0px;
+}
+
+#detailsType {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    align-self: flex-end; /* Align the element to the bottom of its container */
+    height: 100%;
+    margin-top: auto; 
+}
+
+
+#details h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: -35px;
+}
+
+#details p {
+    margin-top: -90px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: -0.05em;
+}
+
+#details h6 {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(128, 128, 128, 0.604);
+}
+
+
+#details h5 {
+    color: red;
+    font-size: 40px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    /* letter-spacing: -0.05em; */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.project img {
+    width: 61%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: auto;
+
+}
+
+.tags {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .tag-bubble {
+    font-weight: 700;
+    font-size: 15px;
+    /* letter-spacing: -0.035em; */
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    border-radius: 50px;
+    cursor: pointer;
+  }

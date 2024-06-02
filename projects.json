@@ -1,0 +1,22 @@
+{
+    "projects": [
+      {
+        "title": "rewilding",
+        "description": "a meditative ecology game about growing a forest between long stretches of cryogenic hibernation.",
+        "image": "rewilding.png",
+        "link": "https://example.com/project1"
+      },
+      {
+        "title": "Project 2",
+        "description": "Project 2 description goes here.",
+        "image": "project2.jpg",
+        "link": "https://example.com/project2"
+      },
+      {
+        "title": "Project 3",
+        "description": "Project 3 description goes here.",
+        "image": "project3.jpg",
+        "link": "https://example.com/project3"
+      }
+    ]
+  }
